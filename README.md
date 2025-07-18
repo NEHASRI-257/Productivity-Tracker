@@ -1,11 +1,11 @@
 # MERN Stack Web Development  
 ______________________________________  
-**COMPANY** : CODTECH IT SOLUTIONS  
-**NAME** : NEHASRI H
-**INTERN ID** : CT08DM1117
-**DOMAIN** : MERN STACK WEB DEVELOPMENT  
-**DURATION** : 8 WEEKS  
-**MENTOR** : NEELA SANTOSH  
+## Company: CODTECH IT SOLUTIONS
+##  Name: NEHASRI H
+##  Intern Id: CT08DM1117
+##  Domain: MERN STACK WEB DEVELOPMENT
+##  Duration: 8 WEEKS
+##  Mentor:NEELA SANTHOSH
 
 ---
 
