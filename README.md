@@ -57,19 +57,19 @@ This project gave me real-world experience in **Chrome extension development**, 
 ---
 
 ### 📊 5. Website Activity Tracking
-![Activity Tracking](./screenshots/activity-report.png)
+![Image](https://github.com/user-attachments/assets/a6c0f63f-fd63-4c0d-98c7-f7e610918f30)
 > Real-time tracking logs visited domains and displays them along with the time spent. This image shows usage data for sites like YouTube and ChatGPT.
 
 ---
 
 ### ⏱️ 6. Usage Summary – Time Analytics
-![Usage Analytics](./screenshots/summary-time.png)
+![Image](https://github.com/user-attachments/assets/4c7cf7ff-7290-4c56-bb73-29edc0c191a7)
 > The summary section displays total time spent online per session or day. Helps users analyze their productivity habits over time.
 
 ---
 
 ### 🧩 7. Chrome Extensions Page
-![Chrome Extensions Page](./screenshots/extension-installed.png)
+![Image](https://github.com/user-attachments/assets/3a0e53e0-7a20-43af-909e-5006f63416bb)
 > The Productivity Tracker extension installed and active in the Chrome Extensions panel, confirming it was built and loaded successfully using Manifest V3.
 
 
