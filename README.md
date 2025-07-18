@@ -31,13 +31,14 @@ This project gave me real-world experience in **Chrome extension development**, 
 # Demo Snapshots
 
 ### 🟦 1. Initial Dashboard – Default State
-![Initial Dashboard](./screenshots/dashboard-initial.png)
+![Image](https://github.com/user-attachments/assets/b736cb38-3fe9-4d5a-bd0f-0372dea60ca1)
+
 > The extension UI upon launch, showing zero tracked time and no blocked sites. Clean and minimal interface built with React.
 
 ---
 
 ### 🚫 2. Blocking a Website – Input Form
-![Blocking a Website Form](./screenshots/block-form.png)
+![Image](https://github.com/user-attachments/assets/7a0fed87-9c57-4afb-99ae-a10a6252a326)
 > User enters a distracting site (e.g., Spotify) along with a reason for blocking it. This demonstrates the dynamic input form.
 
 ---
