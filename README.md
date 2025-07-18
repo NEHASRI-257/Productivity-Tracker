@@ -1,144 +1,32 @@
 # MERN Stack Web Development  
 ______________________________________  
 **COMPANY** : CODTECH IT SOLUTIONS  
-**NAME** : SUDHIR K  
-**INTERN ID** : CT08DM1071  
+**NAME** : NEHASRI H
+**INTERN ID** : CT08DM1117
 **DOMAIN** : MERN STACK WEB DEVELOPMENT  
 **DURATION** : 8 WEEKS  
 **MENTOR** : NEELA SANTOSH  
 
 ---
 
-## 📝 Internship Work Summary
+# 🚀 Productivity Tracker Chrome Extension
 
-As part of my internship at **CodTech IT Solutions**, I developed a full-stack **Productivity Tracker Chrome Extension** that empowers users to stay focused online by monitoring their website usage and blocking distractions in real-time. The goal of this project was to apply my knowledge of the **MERN stack** in building a browser-based productivity tool that functions both as a Chrome Extension and as a web-connected backend system.
+As part of my internship at **CodTech IT Solutions**, I developed a full-stack **Productivity Tracker Chrome Extension**, designed to help users monitor and control their web browsing habits. This project combines browser-level tracking with a cloud-connected backend to offer users a practical tool for improving online focus. Built entirely using the **MERN stack** (MongoDB, Express, React, Node.js), this extension captures real-time browsing activity, blocks distracting websites, and provides insightful usage analytics—allowing users to take charge of their productivity.
 
-To start, I identified the problem statement—modern internet usage often leads to distractions that reduce productivity. The solution was a browser extension that not only tracks time spent on websites but also allows users to block time-wasting domains, and view insightful reports about their browsing behavior.
+The project began with identifying a common problem: frequent distractions while using the internet, which can significantly reduce productivity. I approached the solution by designing a Chrome extension that not only records time spent on websites but also allows users to block specific domains and review their browsing patterns through clean, actionable reports.
 
-The frontend was built using **React**, adapted to comply with **Chrome Extension Manifest V3** requirements. I created components for the popup UI, including real-time usage stats, a website blocking interface, and feedback alerts. The frontend is bundled using Vite and configured for Chrome Extension compatibility, ensuring it could be deployed seamlessly in the browser.
+On the **frontend**, I built the extension’s user interface using **React**, adapted specifically for **Chrome Extension Manifest V3** compliance. The popup UI includes key features such as a usage timer, a domain blocklist form, and alert feedback. To handle extension-specific behaviors like messaging and service workers, I used Chrome’s extension APIs and configured the app using **Vite**, which efficiently bundles the project into a Manifest V3-compatible build. The interface was designed for quick access and usability within the browser's toolbar.
 
-On the backend, I developed a **REST API** using **Node.js**, **Express**, and **MongoDB**. The backend handles storing user activity, retrieving usage analytics, and managing a blocklist database for each user. I implemented endpoints to log time spent per domain, generate daily and weekly usage reports, and update the list of blocked sites.
+The **backend** was implemented using **Node.js** and **Express**, forming a REST API that communicates with a **MongoDB** database. The server manages user-specific records, logs time spent on websites, and stores blocklist data. I designed endpoints to log domain visits, retrieve usage data over different time ranges (daily and weekly), and update or fetch each user’s personalized list of blocked websites.
 
-To sync data across sessions or devices, I implemented a system using a unique **Device ID**, allowing all browser actions to be associated with a consistent record in MongoDB. Time tracking was performed using background scripts in the extension, which monitored active tabs and sent usage data to the server at regular intervals.
+To ensure data continuity across browsing sessions and even different devices, I introduced a **Device ID mechanism**. This allowed each browser instance to maintain a consistent link to the user’s activity in the database. Time tracking was handled in the background using Chrome's extension APIs—scripts monitored active browser tabs, tracked the time spent on each website, and sent this data to the backend at regular intervals.
 
-I tested the extension extensively by simulating various browsing behaviors, blocking/unblocking workflows, and verifying reports accuracy. The blocking feature works by redirecting users to a custom "blocked" warning page when they try to visit listed websites, enhancing self-regulation.
+The blocking feature was implemented by intercepting navigation attempts to any domain listed in the user’s blocklist. When such a domain is accessed, the extension automatically redirects the user to a custom **“Blocked Page”**, discouraging access and reinforcing productive behavior.
 
-This project gave me valuable experience with browser APIs, background service workers, and integrating real-time tracking into a Chrome environment. It also strengthened my knowledge of full-stack development, especially in areas like API security, state management within extensions, and database design for time-series data.
+Extensive testing was conducted to validate each feature. I simulated user behavior such as frequent tab switching, usage spikes, and blocklist changes. Reports were cross-verified with server logs to ensure accurate tracking and analytics. The system functioned reliably across different machines and browsers, offering consistent performance.
 
-By the end of the internship, I successfully deployed both the frontend extension and the backend server, creating a fully functional and installable Chrome Extension. This project significantly improved my ability to think like a full-stack developer and design solutions that combine browser technologies with cloud-based services.
+This project gave me real-world experience in **Chrome extension development**, integrating **React with browser APIs**, designing **RESTful services**, and working with **MongoDB** for time-based tracking. It also enhanced my understanding of syncing local browser activity with cloud databases to build responsive and intelligent productivity tools.
 
----
 
-## 🖼️ Demo Screenshots
 
-Visual walkthrough of the Productivity Tracker Extension:
 
----
-
-### 🏠 1. Home Page  
-UI and Template of the Extension  
-![Home Page](assets/screenshots/home-page.png)
-
----
-
-### 🔧 2. Manage Extensions (chrome://extensions)  
-Load and manage your extension from here.  
-![Manage Extensions](assets/screenshots/manage-extensions.png)
-
----
-
-### 🧩 3. Chrome Extension Popup  
-The floating window that shows real-time website tracking and quick actions.  
-![Extension Popup](assets/screenshots/extension-popup.png)
-
----
-
-### ⏱️ 4. Track Time Spent on Websites  
-View which websites are currently open and how long you've spent on them.  
-![Tracking Open Sites](assets/screenshots/tracking-open-sites.png)
-
----
-
-### 🔒 5. Website Blocking Flow
-
-#### a. Before Blocking (Normal Website View)  
-For Example: https://open.spotify.com/search  
-![Before Blocking](assets/screenshots/site-before-blocking.png)
-
-#### b. Blocking the Website (Using the Extension UI)  
-![Block Site UI](assets/screenshots/block-site-ui.png)
-
-#### c. After Blocking (Blocked Warning Page)  
-![After Blocking](assets/screenshots/site-after-blocking.png)
-
-#### d. Blocked Sites (List of Sites which are blocked)  
-![After Blocking](assets/screenshots/blocked-sites.png)
-
----
-
-# Productivity Tracker Chrome Extension
-
-A **Chrome extension** that helps you improve focus by tracking your website usage and blocking distractions.
-
----
-
-## 🚀 Features
-
-- ⏱️ Track time spent on websites  
-- 🚫 Block distracting websites in realtime 
-- 📊 View daily & weekly productivity reports  
-- 🔄 Sync across devices using a unique device ID  
-
----
-
-## 🗂️ Project Structure
-
-- **Frontend:** Chrome Extension (React + Manifest v3)  
-- **Backend:** Node.js + Express + MongoDB (REST API)  
-
----
-
-## 🔧 Getting Started
-
-### 1. Backend Setup
-
-```bash
-cd backend
-npm install
-# Add your MongoDB connection string to .env
-npm run server
-```
-
-### 2. Frontend (Chrome Extension)
-
-```bash
-cd frontend
-npm install
-npm run build
-```
-
-Then:
-1. Open Chrome → `chrome://extensions`
-2. Enable **Developer mode**
-3. Click **Load unpacked** → select `frontend/dist` folder
-
----
-
-## 📡 API Overview (Simplified)
-
-- **/api/website-usage** – Save and fetch website usage  
-- **/api/website-usage/report** – Get daily/weekly reports  
-- **/api/blocked-sites** – Add, update, and remove blocked websites  
-
----
-
-## 📌 Dev Tips
-
-- Backend dev server: `npm run server`  
-- Frontend dev mode: `npm run dev`  
-- Build extension: `npm run build`
-
----
-
-Made by **Sudhir**💖 
-[GitHub Profile](https://github.com/SudhirKannan)
