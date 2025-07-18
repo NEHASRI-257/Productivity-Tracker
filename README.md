@@ -44,13 +44,14 @@ This project gave me real-world experience in **Chrome extension development**, 
 ---
 
 ### ✅ 3. Website Successfully Blocked
-![Blocked Site List](./screenshots/site-blocked-list.png)
+![Image](https://github.com/user-attachments/assets/1bcab818-f656-4fb3-95f3-1c7109b8a3f2)
+
 > Once submitted, the site appears in the blocklist with the reason shown. Users can also remove it from the list if needed.
 
 ---
 
 ### ⚠️ 4. Blocked Site Redirect Attempt
-![Blocked Page Error](./screenshots/blocked-page-error.png)
+![Image](https://github.com/user-attachments/assets/b749dc7d-64d2-4d13-bb97-5579a9272e65)
 > When trying to access a blocked site, the extension attempts to redirect to a custom "Blocked Page". In this case, `blocked.html` is missing, triggering a file not found error — useful for debugging.
 
 ---
