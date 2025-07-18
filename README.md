@@ -9,7 +9,7 @@ ______________________________________
 
 ---
 
-# 🚀 Productivity Tracker Chrome Extension
+#  Productivity Tracker Chrome Extension
 
 As part of my internship at **CodTech IT Solutions**, I developed a full-stack **Productivity Tracker Chrome Extension**, designed to help users monitor and control their web browsing habits. This project combines browser-level tracking with a cloud-connected backend to offer users a practical tool for improving online focus. Built entirely using the **MERN stack** (MongoDB, Express, React, Node.js), this extension captures real-time browsing activity, blocks distracting websites, and provides insightful usage analytics—allowing users to take charge of their productivity.
 
@@ -26,6 +26,51 @@ The blocking feature was implemented by intercepting navigation attempts to any 
 Extensive testing was conducted to validate each feature. I simulated user behavior such as frequent tab switching, usage spikes, and blocklist changes. Reports were cross-verified with server logs to ensure accurate tracking and analytics. The system functioned reliably across different machines and browsers, offering consistent performance.
 
 This project gave me real-world experience in **Chrome extension development**, integrating **React with browser APIs**, designing **RESTful services**, and working with **MongoDB** for time-based tracking. It also enhanced my understanding of syncing local browser activity with cloud databases to build responsive and intelligent productivity tools.
+
+
+# Demo Snapshots
+
+### 🟦 1. Initial Dashboard – Default State
+![Initial Dashboard](./screenshots/dashboard-initial.png)
+> The extension UI upon launch, showing zero tracked time and no blocked sites. Clean and minimal interface built with React.
+
+---
+
+### 🚫 2. Blocking a Website – Input Form
+![Blocking a Website Form](./screenshots/block-form.png)
+> User enters a distracting site (e.g., Spotify) along with a reason for blocking it. This demonstrates the dynamic input form.
+
+---
+
+### ✅ 3. Website Successfully Blocked
+![Blocked Site List](./screenshots/site-blocked-list.png)
+> Once submitted, the site appears in the blocklist with the reason shown. Users can also remove it from the list if needed.
+
+---
+
+### ⚠️ 4. Blocked Site Redirect Attempt
+![Blocked Page Error](./screenshots/blocked-page-error.png)
+> When trying to access a blocked site, the extension attempts to redirect to a custom "Blocked Page". In this case, `blocked.html` is missing, triggering a file not found error — useful for debugging.
+
+---
+
+### 📊 5. Website Activity Tracking
+![Activity Tracking](./screenshots/activity-report.png)
+> Real-time tracking logs visited domains and displays them along with the time spent. This image shows usage data for sites like YouTube and ChatGPT.
+
+---
+
+### ⏱️ 6. Usage Summary – Time Analytics
+![Usage Analytics](./screenshots/summary-time.png)
+> The summary section displays total time spent online per session or day. Helps users analyze their productivity habits over time.
+
+---
+
+### 🧩 7. Chrome Extensions Page
+![Chrome Extensions Page](./screenshots/extension-installed.png)
+> The Productivity Tracker extension installed and active in the Chrome Extensions panel, confirming it was built and loaded successfully using Manifest V3.
+
+
 
 
 
